@@ -23,10 +23,14 @@
 
 html {
   font-size: 16px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
 }
 
 body {
   overflow: hidden;
+  width: 100%;
   background-color: var(--primary-0F);
   color: var(--gray-EE);
 }
@@ -34,8 +38,10 @@ body {
 .header {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
+  max-width: 1400px;
   padding: 20px 10%;
   background: transparent;
   display: flex;
@@ -178,4 +184,12 @@ body {
       animation-delay: 2s, 3s;
     }
   }
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
 }

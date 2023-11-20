@@ -11,7 +11,7 @@
   console.warn("Welcome to console AVNENDV");
 
   const typed = new Typed(".typed__text", {
-    strings: ["Frontend Develop", "Backend Develop"],
+    strings: ["Frontend Developer", "Backend Developer", "Fullstack Developer"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,

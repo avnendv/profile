@@ -9,7 +9,7 @@ const fileInclude = require("gulp-file-include");
 const minifyCss = require("gulp-clean-css");
 const rename = require("gulp-rename");
 const image = require("gulp-image");
-const ghPages = require('gulp-gh-pages');
+const ghPages = require("gulp-gh-pages");
 
 const pathRoot = "./app/";
 const pathDestBuild = "./build/";
@@ -88,7 +88,7 @@ exports.buildJsPageMin = buildJsPageMin;
 
 // Task optimize images
 function optimizeImages() {
-  const imgSrc = `${pathRoot}assets/images/**/*.+(png|jpg|webp|svg|gif)`;
+  const imgSrc = `${pathRoot}assets/images/**/*.+(png|jpeg|jpg|webp|svg|gif)`;
   const imgDst = `${pathDestBuild}assets/images`;
 
   return src(imgSrc)
@@ -177,8 +177,6 @@ function watchTask() {
 }
 exports.watchTask = watchTask;
 
-
 exports.deploy = () => {
-  return src(`${pathDestBuild}/**/*`)
-    .pipe(ghPages());
-}
+  return src(`${pathDestBuild}/**/*`).pipe(ghPages());
+};
