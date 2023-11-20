@@ -31,9 +31,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avnendv/my-cv.git"
+    "url": "git+https://github.com/avnendv/profile.git"
   },
   "keywords": [
+    "profile",
     "vietnd",
     "avnendv"
   ],
